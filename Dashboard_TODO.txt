@@ -1,0 +1,88 @@
+Controls:
+WinAmp Next
+WinAmp Prev
+WinAmp Shuffle mode
+WinAmp Play/Pause
+Miles/KM Toggle
+Load Mixer
+Volume Up
+Volume Down
+Mute
+System Shutdown
+Up
+Down
+Left
+Right
+Enter
+
+Configuration:
+--------------
+Port Address 	
+Port Mask	(bit to examine)
+Port Type	(0=Low to high, 1=high to low, 2=any transition)
+(repeat mask and type for all controls)
+(requires a program such as UserPort to be installed and opened the PIO port. You will get an error if you don't have it!)
+Base Address should be the PIO data if bidirectional and configured for it 
+Base Address+1 will give you the status/control pins, even if not bidirectional:
+	// for the control byte:
+	// 01 = n/c
+	// 02 = n/c
+	// 04 = n/c
+	// 08 = !ERROR (pin 15)
+	// 16 = SELECTED (pin 13)
+	// 32 = PAPER OUT (pin 12)
+	// 64 = ACK (pin 10)
+	// 128= !BUSY (pin 11)
+It's possible to read the control pins on a serial port using the serial ports
+base address+6. Do NOT interfere with the OBD2 serial port!! (not tested)
+	// 01 = Clear To Send changed
+	// 02 = Data Set Ready changed
+	// 04 = Ring Complete indicator
+	// 08 = Data Carried Detect changed
+	// 16 = Clear to Send	 (Pin 5 on 25 pin, pin 8 on 9 pin)
+	// 32 = Data Set Ready (Pin 6 on both)
+	// 64 = Ring Indicator (Pin 22 on 25 pin, pin 9 on 9 pin)
+	// 128= Carrier Detect (Pin 8 on 25 pin, pin 1 on 9 pin)
+
+SpeedMax
+RPMMax
+EnableOBD
+OBDPort
+Enable External IO
+Audio Mixer Path
+ShutdownMode (0-close, 1-shutdown)
+LogFile
+ScaleMode (0-KM, 1-MPH)
+HideMouse
+ScanForMsgBoxes
+WinAmpShuffle
+
+Skinning
+--------
+Resolution (X,Y)
+
+Graphs(
+  Background Image Name
+  Background Active Image Name
+  Background Selected Image Name
+  Speed Graph Image Name
+  RPM Graph Image Name
+  Speed Graph Image Mask
+  RPM Graph Image Mask
+  Graph Mask Step
+  Background Deactivate Time (sec, so that 'active' areas only light up during movement)
+)
+-Defines the graphs. The masks are read as 8-bit greyscale and used to generate a number of masks predefined for each step (these masks include rectangle information to reduce the amount of screen draw when possible). Memory use increases as the step is increased. (My skin has 50 steps)
+
+(All 'X' may optionally be 'CenterX' for centered text, or 'RightX' for right justified)
+Log (X, Y, Lines, LineLength, FontFace, FontSize, Color, WarnColor, ExternalText)
+ExternalPic (Name, X, Y, Width, Height)
+Speed (X, Y, FontFace, FontSize, Color)
+Scale (X, Y, FontFace, FontSize, Color)
+Date (X, Y, FontFace, FontSize, Color, Format)
+Time (X, Y, FontFace, FontSize, Color, Format)
+Trip (X, Y, FontFace, FontSize, Color, Format)
+WinAmp (X, Y, Color, Starting, Shuffle On, Shuffle Off, Play, Pause, Paused, Stopped, Previous, Next)
+
+Control (listed above) (X,Y,W,H)
+

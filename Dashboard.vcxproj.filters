@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{edb3e443-93e0-4262-87af-e51d614a0f3a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5a988a7a-f80c-4280-8fe9-a16e96648e55}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1e9d401e-56b1-4a00-8e75-b9a2da43a940}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dashboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DashboardDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dashboard.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dashboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DashboardDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wa_ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\Background.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Dashboard.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Dashboard.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\Digir___.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\Digirtu_.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\DigitalDash.psd">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\ocra2_p.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\SpeedMask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\Speedometer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\TachMask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\Tachometer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\webcam.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Dashboard.ini" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
