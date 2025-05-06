@@ -168,6 +168,8 @@ static char THIS_FILE[] = __FILE__;
 #define mph(x) (int)((x)*0.62139)
 // km/h to fpf - 1 km is 4.97112 furlongs. 1 fortnight is 336 hours.
 // So we use MegaFurlongs per Fortnight - here multiplied by 10, divide by 10 for display
+// TODO: I think this math is wrong. kmh*1670.29632 = fpf
+// Where did 23384 come from?
 #define fpf(x) (int)(((x)*23384.14848)/100000)
 
 char szLog[LOGLINES][LOGLENGTH];
